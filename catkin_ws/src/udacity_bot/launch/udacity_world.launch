@@ -26,6 +26,6 @@
 
 <!--launch rviz-->
 <!-- <node name="rviz" pkg="rviz" type="rviz" respawn="false"/> -->
-  <node pkg="rviz" type="rviz" name="rviz" args="-d /home/workspace/catkin_ws/src/udacity_bot/launch/Rvizconfig.rviz"/>
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find udacity_bot)/launch/Rvizconfig.rviz"/>
 
 </launch>
