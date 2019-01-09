@@ -1,0 +1,32 @@
+#### commands launching the Student Model
+
+cd /home/workspace/catkin_ws/
+catkin_make
+source devel/setup.bash
+roslaunch udacity_bot udacity_world_chris.launch 
+
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+roslaunch udacity_bot amcl_chris.launch
+
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+rosrun udacity_bot navigation_goal 
+
+
+
+
+#### commands launching the Benchmark Model
+
+cd /home/workspace/catkin_ws/
+catkin_make
+source devel/setup.bash
+roslaunch udacity_bot udacity_world.launch
+
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+roslaunch udacity_bot amcl.launch
+
+cd /home/workspace/catkin_ws/
+source devel/setup.bash
+rosrun udacity_bot navigation_goal 
