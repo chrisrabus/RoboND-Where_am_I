@@ -30,15 +30,14 @@
     <collision name='collision'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/> 
       <geometry>
-        <cylinder radius=".3" length=".1"/>
-        <box size=".4 .2 .1"/>
+        <cylinder radius=".25" length=".1"/>
       </geometry>
     </collision>
 
     <visual name='chassis_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <cylinder radius=".3" length=".1"/>
+        <cylinder radius=".25" length=".1"/>
       </geometry>
     </visual>
 
@@ -67,6 +66,20 @@
       <origin xyz="0.15 0 -0.05" rpy=" 0 0 0"/>
       <geometry>
         <sphere radius="0.05"/>
+      </geometry>
+    </visual>
+    
+    <collision name='laser_sockel_collision'>
+      <origin xyz="0 0 0.05" rpy=" 0 0 0"/>
+      <geometry>
+        <box size=".1 .1 .1"/>
+      </geometry>
+    </collision>
+
+    <visual name='laser_sockel_visual'>
+      <origin xyz="0 0 0.05" rpy=" 0 0 0"/>
+      <geometry>
+      	<box size=".1 .1 .1"/>
       </geometry>
     </visual>
 
@@ -171,7 +184,7 @@
   </link>
 
   <joint type="fixed" name="camera_joint">
-    <origin xyz="0.2 0 0" rpy="0 0 0"/>
+    <origin xyz="0.25 0 0" rpy="0 0 0"/>
     <child link="camera"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
@@ -205,7 +218,7 @@
   </link>
 
   <joint type="fixed" name="hokuyo_joint">
-    <origin xyz="0.15 0 0.1" rpy="0 0 0"/>
+    <origin xyz="0 0 0.15" rpy="0 0 0"/>
     <child link="hokuyo"/>
     <parent link="chassis"/>
     <axis xyz="0 1 0" rpy="0 0 0"/>
