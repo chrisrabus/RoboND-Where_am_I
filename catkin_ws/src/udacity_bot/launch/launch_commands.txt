@@ -30,3 +30,15 @@ roslaunch udacity_bot amcl.launch
 cd /home/workspace/catkin_ws/
 source devel/setup.bash
 rosrun udacity_bot navigation_goal 
+
+
+#### git
+
+cd /home/workspace/
+git add catkin_ws/
+git status
+git commit -m "a message"
+git push -u origin master
+
+
+
